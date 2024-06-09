@@ -34,10 +34,10 @@ Rollback = Window:AddTab('RollBack'),
 
 -- Groupbox and Tabbox inherit the same functions
 -- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
-local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Universal Rollback')
+local LeftGroupBox = Tabs.Rollback:AddLeftGroupbox('Universal Rollback')
 
 -- We can also get our Main tab via the following code:
--- local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Universal Rollback')
+-- local LeftGroupBox = Window.Tabs.Rollback:AddLeftGroupbox('Universal Rollback')
 
 -- Tabboxes are a tiny bit different, but here's a basic example:
 --[[
