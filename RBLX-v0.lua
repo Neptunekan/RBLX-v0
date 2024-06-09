@@ -29,12 +29,13 @@ local Window = Library:CreateWindow({
 local Tabs = {
     -- Creates a new tab titled Main
     Main = Window:AddTab('Main'),
-    ['UI Settings'] = Window:AddTab('UI Settings'),
+    ['UI Settings'] = Window:AddTab('Rollback'),
 }
 
 -- Groupbox and Tabbox inherit the same functions
 -- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
-local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Groupbox')
+local LeftGroupBox = Tabs.Main:AddLeftGroupbox('Main')
+local LeftGroupBox2 = Tabs.['UI Settings']:AddLeftGroupbox('Universal Rollback')
 
 -- We can also get our Main tab via the following code:
 -- local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Universal Rollback')
