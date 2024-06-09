@@ -28,16 +28,16 @@ local Window = Library:CreateWindow({
 -- You do not have to set your tabs & groups up this way, just a prefrence.
 local Tabs = {
     -- Creates a new tab titled Main
-    Main = Window:AddTab('Main'),
-Rollback = Window:AddTab('RollBack'),
+    Rollback = Window:AddTab('Rollback'),
+Main = Window:AddTab('Main'),
 }
 
 -- Groupbox and Tabbox inherit the same functions
 -- except Tabboxes you have to call the functions on a tab (Tabbox:AddTab(name))
-local LeftGroupBox = Tabs.RollBack:AddLeftGroupbox('Universal Rollback')
+local LeftGroupBox = Tabs.Rollback:AddLeftGroupbox('Universal Rollback')
 
 -- We can also get our Main tab via the following code:
--- local LeftGroupBox = Window.Tabs.Rollback:AddLeftGroupbox('Universal Rollback')
+-- local LeftGroupBox = Window.Tabs.Main:AddLeftGroupbox('Universal Rollback')
 
 -- Tabboxes are a tiny bit different, but here's a basic example:
 --[[
